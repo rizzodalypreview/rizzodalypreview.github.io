@@ -1,0 +1,158 @@
+<html>
+
+<head>
+<title>Rizzo Daly</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="animations.css">
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/smoothscroll.js"></script>
+
+
+</head>
+<body>
+
+<div id="top" class="invisible"><a href="#intro" class="smoothScroll"><i class="fa fa-arrow-up"></i></a></div>
+
+<div id="toolbar">
+	<div class="logo">#TMIIA</div>
+	<ul class="links">
+		<li><a href="#about" class="smoothScroll">About</a></li>
+		<li><a href="#works" class="smoothScroll">Works</a></li>
+		<li><a href="#contact" class="smoothScroll">Contact</a></li>
+	</ul>
+</div>
+
+<a name="intro"></a>
+<div id="intro">
+
+	<h3>RIZZO DALY</h3>
+	<div id="facts"></div>
+
+
+	<button onClick="quotes()">Trust me, I'm an artist <i class="fa fa-refresh"></i></button>
+
+	<a href="#about" class="smoothScroll"><i class="scroll fa fa-arrow-circle-down floating"></i></a>
+
+</div>
+
+<div id="about">
+	<a name="about"></a> 
+	<div class="spacer"></div>
+
+	<h2>About</h2>
+
+</div>
+
+<a name="works"></a> 
+<div class="spacer"></div>
+<h2>Portfolio</h2>
+
+<div id="portfolio">
+
+	<a href="portfolio/1.html">
+		<div class="item oneblur">
+			<h1>PROJECT 1</h1>
+		</div>
+		<div class="item one"></div>
+	</a>
+	<a href="portfolio/2.html">
+		<div class="item twoblur">
+			<h1>PROJECT 2</h1>
+		</div>
+		<div class="item two"></div>
+	</a>
+	<a href="portfolio/3.html">
+		<div class="item threeblur">
+			<h1>PROJECT 3</h1>
+		</div>
+		<div class="item three"></div>
+	</a>
+	<a href="portfolio/4.html">
+		<div class="item fourblur">
+			<h1>PROJECT 4</h1>
+		</div>
+		<div class="item four"></div>
+	</a>
+	<a href="portfolio/5.html">
+		<div class="item fiveblur">
+			<h1>PROJECT 5</h1>
+		</div>
+		<div class="item five"></div>
+	</a>
+	<a href="portfolio/6.html">
+		<div class="item sixblur">
+			<h1>PROJECT 6</h1>
+		</div>
+		<div class="item six"></div>
+	</a>
+	<a href="portfolio/7.html">
+		<div class="item sevenblur">
+			<h1>PROJECT 7</h1>
+		</div>
+		<div class="item seven"></div>
+	</a>
+	<a href="portfolio/8.html">
+		<div class="item eightblur">
+			<h1>PROJECT 8</h1>
+		</div>
+		<div class="item eight"></div>
+	</a>
+</div>
+
+
+<div id="contact">
+	<div class="spacer"></div>
+	<a name="contact"></a> 
+
+	<h2>Contact</h2>
+
+</div>
+
+<div id="bottombar">
+
+</div>
+
+
+<script>
+	
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 500) {
+        $("#toolbar").addClass("toolbarbg");
+        $("#top").removeClass("invisible");
+        $("#top").addClass("visible");
+    }
+    else {
+    	$("#toolbar").removeClass("toolbarbg");
+    	$("#top").removeClass("visible");
+    	$("#top").addClass("invisible");
+    }
+});
+</script>
+
+<script language="javascript">
+
+var aquote = new Array;
+
+aquote[0]="<h4>Once fought 17 sharks with his bare hands.*</h4><h5>* in his dreams, and lost.</h5>";
+
+function quotes(){
+aquote[0]="<h4>Once fought 17 sharks with his bare hands.*</h4><h5>* in his dreams, and lost.</h5>";
+aquote[1]="<h4>4 out of 5 doctors recommend his work.</h4><h5>The 5th comments &quot;What? Who?&quot;.</h5>";
+aquote[2]="<h4>His work is minty fresh.</h4><h5>Ice, ice, baby.</h5>";
+aquote[3]="<h4>His work is minty fresh.</h4><h5>Ice, ice, baby.</h5>";
+
+rdmQuote = Math.floor(Math.random()*aquote.length);
+document.getElementById('facts').innerHTML=aquote[rdmQuote];
+};
+
+window.onload=function() {
+	document.getElementById('facts').innerHTML=aquote[0];
+};
+
+</script>
+</body>
