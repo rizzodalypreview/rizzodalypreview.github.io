@@ -21,6 +21,7 @@ i {
 	color: #3ADDF2;
 }
 
+
 #top {
 	z-index: 8;
 	position: fixed;
@@ -71,7 +72,7 @@ h1 {
 	color: #fff;
 	text-align: center;
 	padding-top: 90px;
-	/*text-shadow: 1px 0 10px #333;*/
+	text-shadow: 1px 0 20px #333;
 	text-decoration: none;
 }
 
@@ -241,9 +242,25 @@ button:hover {
 	width: 100%;
 }
 
+.desc {
+	width: 580px;
+	margin: 0 auto;
+	text-align: center;
+	color: #999;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	padding: 20px 30px 20px 30px;
+	font-size: 20px;
+}
+
+.desc b {
+	color: #3ADDF2;
+	font-weight: 700;
+}
+
 #contact {
 	overflow: hidden;
-	height: 600px;
+	height: 520px;
 	width: 100%;
 }
 
@@ -272,11 +289,11 @@ button:hover {
 	min-width: 320px;
 	max-width: 1024px;
 	height: 250px;
-	transition: all .5s ease;
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	-o-transition: all .5s ease;
-	-ms-transition: all .5s ease;
+	transition: all .05s ease;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
 }
 
 .one:hover, .two:hover, .three:hover, .four:hover, .five:hover, .six:hover, .seven:hover, .eight:hover {
@@ -284,69 +301,69 @@ button:hover {
 }
 
 .one {
-	background-image: url('http://bonds-gallery.com/wp-content/uploads/2014/05/Dolphin-Wallpaper-Background-HD-7496.jpg');
+	background-image: url('images/3d.png');
 	left: 0;
 	top: 0;	
 	z-index: 2;
 }
 
 .oneblur {
-	background-image: url('http://i.kinja-img.com/gawker-media/image/upload/s--op9G-bwq--/18ueace0qebc1jpg.jpg');
+	background-image: url('images/3d_blur.png');
 	z-index: 1;
 	left: 0;
 	top: 0;
 }
 
 .two {
-	background-image: url('http://tippvet.com/wp-content/uploads/2013/05/cat-vet.jpg');
+	background-image: url('images/supersoaker.png');
 	left: 50%;
 	z-index: 2;
 	}
 
 .twoblur {
-	background-image: url('http://www.avianexplorer.com/wp-content/uploads/monkey3.jpg');
+	background-image: url('images/supersoaker_blur.png');
 	z-index: 1;
 	left: 50%;
 	top: 0;
 }
 
 .three {
-	background-image: url('http://upload.wikimedia.org/wikipedia/en/1/18/Final_Wars_Godzilla.jpg');
+	background-image: url('images/fortmchenry.png');
 	left: 0;
 	top: 250px;
 	z-index: 2;
 }
 
 .threeblur {
-	background-image: url('http://www.avianexplorer.com/wp-content/uploads/monkey3.jpg');
+	background-image: url('images/fortmchenry_blur.png');
 	z-index: 1;
 	left: 0;
 	top: 250px;
 }
 
 .four {
-	background-image: url('');
+	background-image: url('images/mythology.png');
 	left: 50%;
 	top: 250px;
 	z-index: 2;
 }
 
 .fourblur {
-	background-image: url('');
+	background-image: url('images/mythology_blur.png');
 	left: 50%;
 	top: 250px;
 	z-index: 1;
 }
 
 .five {
-	background-image: url('');
+	background-image: url('images/oru.png');
 	z-index: 2;
 	left: 0;
 	top: 500px;
 }
 
 .fiveblur {
-	background-image: url('');
+	background-image: url('images/oru_blur.png');
 	z-index: 1;
 	left: 0;
 	top: 500px;
@@ -354,42 +371,42 @@ button:hover {
 
 
 .six {
-	background-image: url('');
+	background-image: url('images/million.png');
 	z-index: 2;
 	left: 50%;
 	top: 500px;
 }
 
 .sixblur {
-	background-image: url('');
+	background-image: url('images/million_blur.png');
 	z-index: 1;
 	left: 50%;
 	top: 500px;
 }
 
 .seven {
-	background-image: url('http://i.kinja-img.com/gawker-media/image/upload/s--op9G-bwq--/18ueace0qebc1jpg.jpg');
+	background-image: url('images/badges.png');
 	z-index: 2;
 	left: 0;
 	top: 750px;
 }
 
 .sevenblur {
-	background-image: url('');
+	background-image: url('images/badges_blur.png');
 	z-index: 1;
 	left: 0;
 	top: 750px;
 }
 
 .eight {
-	background-image: url('http://i.kinja-img.com/gawker-media/image/upload/s--op9G-bwq--/18ueace0qebc1jpg.jpg');
+	background-image: url('images/misc.png');
 	z-index: 2;
 	left: 50%;
 	top: 750px;
 }
 
 .eightblur {
-	background-image: url('');
+	background-image: url('images/misc_blur.png');
 	z-index: 1;
 	left: 50%;
 	top: 750px;
@@ -406,4 +423,37 @@ button:hover {
 .spacer {
 	height: 70px;
 	width: 100%;
+}
+
+.contactlist li {
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+
+.contactlist {
+	padding-top: 60px;
+	width: 370px;
+	margin: 0 auto;
+}
+
+.contactinfo {
+	display: block;
+	height: 40px;
+	padding: 15px 10px 5px 10px;
+	background-color: #f2f2f2;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
+}
+
+.contacticon {
+	display: block;
+	height: 40px;
+	width: 40px;
+	background-color: #3ADDF2;
+	color: #fff;
+	padding: 13px 10px 7px 10px;
+	text-align: center;
+	font-size: 34px;
 }
